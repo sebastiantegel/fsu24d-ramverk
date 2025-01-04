@@ -1,0 +1,12 @@
+.top-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+
+    .nav-item {
+        text-decoration: underline;
+    }
+}
