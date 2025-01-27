@@ -1,0 +1,6 @@
+#movies {
+    & > div {
+        display: flex;
+        flex-direction: column;
+    }
+}
