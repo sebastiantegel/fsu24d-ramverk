@@ -3,6 +3,7 @@ export type Pokemon = {
   weight: number;
   sprites: Sprite;
   moves: Move[];
+  types: Type[];
 };
 
 type Sprite = {
@@ -16,4 +17,8 @@ type Move = {
 type NameUrl = {
   name: string;
   url: string;
+};
+
+type Type = {
+  type: NameUrl;
 };

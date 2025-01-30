@@ -23,11 +23,11 @@ export const PokemonDetails = () => {
       <h3>{pokemon?.name}</h3>
       <img src={pokemon?.sprites.front_default} alt={pokemon?.name} />
       <p>{pokemon?.weight}</p>
-      {/* <ul>
-        {pokemon?.moves.map((m) => {
-          return <li key={m.move.name}>{m.move.name}</li>;
+      <ul>
+        {pokemon?.types.map((t) => {
+          return <li key={t.type.name}>{t.type.name}</li>;
         })}
-      </ul> */}
+      </ul>
     </div>
   );
 };
