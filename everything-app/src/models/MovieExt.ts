@@ -5,3 +5,14 @@ export type MovieExt = Movie & {
   Director: string;
   Actors: string;
 };
+
+// interface Test {
+//   name: string;
+// }
+
+// interface TestExt extends Test {
+//   email: string;
+// }
+
+// const a: MovieExt = { Title: "", Poster: "", imdbID: "", Plot: "", Director: "", Actors: ""}
+// const b: Movie = { Title: "", Poster: "", imdbID: "" }
