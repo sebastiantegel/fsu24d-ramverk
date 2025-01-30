@@ -6,6 +6,7 @@ import { Music } from "./pages/Music";
 import { NotFound } from "./pages/NotFound";
 import { Pokemons } from "./pages/Pokemons";
 import { MovieDetails } from "./pages/MovieDetails";
+import { PokemonDetails } from "./pages/Pokemon";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,12 @@ export const router = createBrowserRouter([
       {
         path: "/pokemons",
         element: <Pokemons />,
+        children: [
+          {
+            path: "/pokemons/:name",
+            element: <PokemonDetails />,
+          },
+        ],
       },
       {
         path: "/music",

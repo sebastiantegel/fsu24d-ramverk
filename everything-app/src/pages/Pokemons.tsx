@@ -20,7 +20,9 @@ export const Pokemons = () => {
   return (
     <div className="pokemons">
       <h2>Pokemons</h2>
-      <ShowPokemons pokemons={pokemons}></ShowPokemons>
+      <div className="list-details">
+        <ShowPokemons pokemons={pokemons}></ShowPokemons>
+      </div>
       <button disabled={offset === 0} onClick={() => setOffset(offset - 20)}>
         Föregående 20
       </button>

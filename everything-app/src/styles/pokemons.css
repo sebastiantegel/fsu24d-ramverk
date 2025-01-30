@@ -1,4 +1,10 @@
 .pokemons {
+    .list-details {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
     ul {
         list-style: none;
         padding: 0;

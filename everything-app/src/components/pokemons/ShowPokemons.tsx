@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { Outlet, useNavigate } from "react-router";
 import { PokemonSmall } from "../../models/PokeResponse";
 
 interface IShowPokemonsProps {
@@ -16,7 +16,7 @@ export const ShowPokemons = (props: IShowPokemonsProps) => {
             <li
               key={p.name}
               onClick={() => {
-                navigate("/pokemon/" + p.name);
+                navigate("/pokemons/" + p.name);
               }}
             >
               {p.name}
@@ -24,6 +24,9 @@ export const ShowPokemons = (props: IShowPokemonsProps) => {
           );
         })}
       </ul>
+      <div>
+        <Outlet />
+      </div>
     </>
   );
 };
